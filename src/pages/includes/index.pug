@@ -1,0 +1,9 @@
+extends /pages/common/layout
+include /pages/includes/searchbar/searchbar
+include /pages/includes/infobar/infobar
+
+block content
+    div
+        div(class="body__content")    
+            +searchbar('найдётся всё')
+            +infobar()

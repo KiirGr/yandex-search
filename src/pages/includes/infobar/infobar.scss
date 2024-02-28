@@ -1,0 +1,42 @@
+.info__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    padding: 0 15px 0 15px;
+
+    .info__inner-numbers{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        >div{
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 18px;
+        }
+
+        a{
+            color: #00000073;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 400;
+        }
+        a:hover{                        
+            color: #000000ad;
+        }
+    }
+
+    .info__inner-city{
+        a{
+            color: #00000073;
+            text-decoration: none;
+            font-size: 17px;
+            font-weight: 400;
+        }
+        a:hover{                        
+            color: #000000ad;
+        }
+    }
+}

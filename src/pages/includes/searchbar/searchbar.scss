@@ -1,0 +1,41 @@
+form{
+    margin-top: 170px;                
+}
+
+.search__inner{
+    display: flex;
+    border: 2.5px solid #fc0;
+    border-radius: 19px;
+    justify-content: space-between;    
+    height: 63px;
+    padding-right: 10px;
+
+    div:nth-child(1){
+        width: 100%;
+    }
+
+    .search__input{
+        border: none;
+        font-size: 22px;
+        color: #000;
+        opacity: 0.5;
+        height: 100%;
+        width: 100%;
+        padding:0 10px 0 20px;
+        background: transparent;
+    }
+    .search__input:focus-visible{
+        outline: none;
+    }
+
+    .search__inner_block{
+        display: flex;
+
+        a{
+            display: flex;
+            align-items: center;
+            width: 50px;
+            justify-content: space-around;
+        }
+    }
+}

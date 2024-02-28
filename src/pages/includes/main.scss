@@ -1,0 +1,55 @@
+@import "./infobar/infobar.scss";
+@import "./searchbar/searchbar.scss";
+
+body{
+    margin: 0;
+
+    .main{
+        
+        font-family: YS Text,Arial,Helvetica,Arial Unicode MS,sans-serif;
+        display: flex;
+        flex-direction: column;
+
+        .headline{
+            align-items: center;
+            display: flex;
+            padding: 35px 40px 0 40px;
+
+                .headline__personal {
+                    align-items: center;
+                    display: flex;
+                    margin-left: auto;
+                    
+                    .headline__personal-enter {
+                        background-color: #0000000f;
+                        border-radius: 14px;
+                        display: block;
+                        font-size: 20px;
+                        font-weight: 600;                        
+                        line-height: 2rem;
+                        margin: 0 12px 0 12px;
+                        padding: 8px 24px;
+                        color: #000000;
+                        text-decoration: none;
+                        border: 0;
+                        cursor: pointer;
+                    }
+
+                    .headline__personal-enter:hover{
+                        background-color: #0000001f;
+                    }
+
+                    .headline__personal-menu{
+                        vertical-align: bottom;
+                    }
+                }            
+        }
+
+        .body__content{
+            max-width: 1056px;
+            width: 100%;
+            margin: 0 auto;
+        }
+
+    }
+}
