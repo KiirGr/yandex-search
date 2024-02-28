@@ -10,22 +10,18 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@prettier/plugin-pug": "^3.0.0",
     "gulp": "^4.0.2",
     "gulp-pug-linter": "^1.5.0",
     "gulp-sass": "^5.1.0",
-    "node-sass": "^9.0.0"
+    "node-sass": "^9.0.0",
+    "prettier": "^3.2.5"
   },
   "dependencies": {
     "gulp-autoprefixer": "^9.0.0",
     "gulp-clean-css": "^4.3.0",
     "gulp-pug": "^5.0.0",
     "gulp-shorthand": "^1.1.0",
-    "gulp-sourcemaps": "^3.0.0",
-    "gulp-stylelint": "^13.0.0",
-    "stylelint": "^16.2.1",
-    "stylelint-config-htmlacademy": "^4.0.5",
-    "stylelint-config-standard": "^36.0.0",
-    "stylelint-config-standard-scss": "^13.0.0",
-    "stylelint-scss": "^6.1.0"
+    "gulp-sourcemaps": "^3.0.0"
   }
 }

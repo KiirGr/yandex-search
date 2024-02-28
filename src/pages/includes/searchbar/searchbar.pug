@@ -1,10 +1,10 @@
 mixin searchbar(text)
-    form
-        div(class="search__inner")
-            div
-                input(class="search__input" placeholder=text)
-            div(class="search__inner_block")  
-                a(href="#")
-                    img(src="../src/img/microphone.svg" width="39px")
-                a(href="#")
-                    img(src="../src/img/photo.svg" width="39px")
+  form
+    .search__inner
+      div
+        input.search__input(placeholder=text)
+      .search__inner_block 
+        a(href="#")
+          img(src="../src/img/microphone.svg", width="39px")
+        a(href="#")
+          img(src="../src/img/photo.svg", width="39px")
