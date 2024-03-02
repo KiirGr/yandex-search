@@ -14,12 +14,12 @@
     "**/*.css": [
       "prettier --write"
     ],
-    "**/*.{json,md,html}": [
-      "prettier --write"
+    "**/*.{json,md,html,pug}": [
+      "prettier --write '**/*.{js,ts,jsx,tsx,css,json,md,pug,html}' --plugin='@prettier/plugin-pug'"
     ]
   },
   "simple-git-hooks": {
-    "pre-commit": "npx lint-staged"
+    "pre-commit": "npm run prettier-fix"
   },
   "keywords": [],
   "author": "",
