@@ -13,13 +13,10 @@
     ],
     "**/*.css": [
       "prettier --write"
-    ],
-    "**/*.{json,md,html}": [
-      "prettier --write"
     ]
   },
   "simple-git-hooks": {
-    "pre-commit": "npx prettier-fix lint-staged"
+    "pre-commit": "npx lint-staged"
   },
   "keywords": [],
   "author": "",
