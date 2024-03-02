@@ -19,7 +19,7 @@
     ]
   },
   "simple-git-hooks": {
-    "pre-commit": "npm run prettier-fix npx lint-staged"
+    "pre-commit": "npx prettier-fix lint-staged"
   },
   "keywords": [],
   "author": "",
