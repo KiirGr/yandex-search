@@ -13,6 +13,9 @@
     ],
     "**/*.css": [
       "prettier --write"
+    ],
+    "**/*.{json,md,html,pug}": [
+      "prettier --write --plugin=@prettier/plugin-pug"
     ]
   },
   "simple-git-hooks": {
