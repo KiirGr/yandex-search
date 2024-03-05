@@ -1,13 +1,13 @@
-const gulp = require('gulp');
-const pug = require('gulp-pug');
+const gulp = require("gulp");
+const pug = require("gulp-pug");
 
 module.exports = function pug2html() {
   return gulp
-    .src('src/pages/includes/*.pug')
+    .src("src/pages/includes/*.pug")
     .pipe(
       pug({
-        basedir: './src',
+        basedir: "./src",
       }),
     )
-    .pipe(gulp.dest('build'));
+    .pipe(gulp.dest("build"));
 };

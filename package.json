@@ -9,7 +9,8 @@
   },
   "lint-staged": {
     "**/*.{js,ts,jsx,tsx}": [
-      "./node_modules/.bin/eslint '**/*.{js,ts,jsx,tsx}' --fix"
+      "./node_modules/.bin/eslint '**/*.{js,ts,jsx,tsx}' --fix",
+      "prettier --write"
     ],
     "**/*.css": [
       "prettier --write"
@@ -28,6 +29,7 @@
     "@prettier/plugin-pug": "^3.0.0",
     "eslint": "^8.57.0",
     "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-import": "^2.29.1",
     "gulp-pug-linter": "^1.5.0",
     "lint-staged": "^15.2.2",
@@ -40,8 +42,8 @@
     "gulp-autoprefixer": "^9.0.0",
     "gulp-clean-css": "^4.3.0",
     "gulp-pug": "^5.0.0",
-    "gulp-shorthand": "^1.1.0",
     "gulp-sass": "^5.1.0",
+    "gulp-shorthand": "^1.1.0",
     "gulp-sourcemaps": "^3.0.0",
     "node-sass": "^9.0.0"
   }
