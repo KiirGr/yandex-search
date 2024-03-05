@@ -1,12 +1,13 @@
 const gulp = require("gulp");
 
+const server = require("browser-sync").create();
 const pug2html = require("./gulp/tasks/pug2html");
 const styles = require("./gulp/tasks/styles");
 const img = require("./gulp/tasks/img");
 
-const server = require("browser-sync").create();
+let browserSync = module.exports;
 
-browserSync = module.exports = function serve(cb) {
+browserSync = function serve(cb) {
   server.init({
     server: "build",
     notify: false,
