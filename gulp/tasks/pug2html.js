@@ -9,5 +9,6 @@ module.exports = function pug2html() {
         basedir: "./src",
       }),
     )
+
     .pipe(gulp.dest("build"));
 };
