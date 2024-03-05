@@ -25,4 +25,4 @@ browserSync = function serve(cb) {
   return cb();
 };
 
-browserSync.start = gulp.series(pug2html, styles, img, browserSync);
+module.exports.start = gulp.series(pug2html, styles, img, browserSync);
