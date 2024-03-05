@@ -5,11 +5,12 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prettier-fix": "prettier --write '**/*.{js,ts,jsx,tsx,css,json,md,pug,html}' --plugin='@prettier/plugin-pug'"
+    "prettier-fix": "prettier --write '**/*.{js,ts,jsx,tsx,css,json,md,pug,html}' --plugin='@prettier/plugin-pug'",
+    "eslint-fix": "./node_modules/.bin/eslint '**/*.{js,ts,jsx,tsx}' --fix"
   },
   "lint-staged": {
     "**/*.{js,ts,jsx,tsx}": [
-      "eslint --fix",
+      "eslint-fix",
       "prettier --write"
     ],
     "**/*.css": [
