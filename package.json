@@ -9,7 +9,6 @@
   },
   "lint-staged": {
     "**/*.{js,ts,jsx,tsx}": [
-      "./node_modules/.bin/eslint '**/*.{js,ts,jsx,tsx}' --fix",
       "prettier --write"
     ],
     "**/*.css": [
