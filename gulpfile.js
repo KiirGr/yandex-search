@@ -5,7 +5,9 @@ const pug2html = require("./gulp/tasks/pug2html");
 const styles = require("./gulp/tasks/styles");
 const img = require("./gulp/tasks/img");
 
-browserSync = module.exports = function serve(cb) {
+let browserSync = module.exports;
+
+browserSync = function serve(cb) {
   server.init({
     server: "build",
     notify: false,
