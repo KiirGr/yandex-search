@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prettier-fix": "prettier --write '**/*.{js,ts,jsx,tsx,css,json,md,pug,html}' --plugin='@prettier/plugin-pug'"
+    "prettier-fix": "prettier --write '**/*.{js,ts,jsx,tsx,css,json,md,pug,html}'"
   },
   "lint-staged": {
     "**/*.{js,ts,jsx,tsx}": [
@@ -16,7 +16,7 @@
       "prettier --write"
     ],
     "**/*.{json,md,html,pug}": [
-      "prettier --write --plugin=@prettier/plugin-pug"
+      "prettier --write"
     ]
   },
   "simple-git-hooks": {
@@ -34,7 +34,9 @@
     "gulp-pug-linter": "^1.5.0",
     "lint-staged": "^15.2.2",
     "prettier": "^3.2.5",
-    "simple-git-hooks": "^2.9.0"
+    "simple-git-hooks": "^2.9.0",
+    "stylelint-config-standard": "^36.0.0",
+    "stylelint-prettier": "^5.0.0"
   },
   "dependencies": {
     "browser-sync": "^3.0.2",
